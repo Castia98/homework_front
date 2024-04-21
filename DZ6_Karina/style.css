@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-image: url(img/JOKER.png);
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(20, 30, 51, 0.37);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(6, 113, 252, 0.53);
+}
+
+#result {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.number {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: rgba(20, 30, 51, 0.37);
+    color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: slideIn 0.5s ease forwards;
+    border: 1px solid rgba(255, 255, 255, 0.57);
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
