@@ -1,0 +1,47 @@
+body {
+    font-family: "Jersey 15", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('neuro.jpeg');
+    background-size: cover;
+}
+
+.symbolCounter {
+    text-align: center;
+}
+
+#textArea {
+    font-family: "Jersey 15", sans-serif;
+    font-size: 25px;
+    color: rgba(226, 209, 252, 0.67);
+    width: 300px;
+    height: 100px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.1s ease;
+    resize: none;
+    background-color: rgba(62, 54, 107, 0.48);
+    outline: none;
+}
+
+#textArea.error {
+    border-color: rgba(255, 0, 0, 0.6);
+}
+
+#countSymbol {
+    margin-top: 10px;
+    font-size: 22px;
+    color: rgba(230, 255, 0, 0.95);
+}
+#countSymbol.error {
+    color: rgba(255, 0, 0, 0.95);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
